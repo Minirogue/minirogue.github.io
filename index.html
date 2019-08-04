@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Shawn Witte: Department of Mathematics</title>
+<link href="defaultstyle.css" rel="stylesheet" media="screen" />
+<link rel="icon" href="witteicon.ico" type="image/x-icon" />
+<script type="text/JavaScript" src="curvycorners.js"></script>
+<script type="text/javascript">
+    //<![CDATA[
+
+    var tabLinks = new Array();
+    var contentDivs = new Array();
+
+    function init() {
+
+      // Grab the tab links and content divs from the page
+      var tabListItems = document.getElementById('tabul').childNodes;
+      for ( var i = 0; i < tabListItems.length; i++ ) {
+        if ( tabListItems[i].nodeName == "LI" ) {
+          var tabLink = getFirstChildWithTagName( tabListItems[i], 'A' );
+          var id = getHash( tabLink.getAttribute('href') );
+          tabLinks[id] = tabLink;
+          contentDivs[id] = document.getElementById( id );
+        }
+      }
+
+      // Assign onclick events to the tab links, and
+      // highlight the first tab
+      var i = 0;
+
+      for ( var id in tabLinks ) {
+        tabLinks[id].onclick = showTab;
+        tabLinks[id].onfocus = function() { this.blur() };
+        if ( i == 0 ) tabLinks[id].className = 'selected';
+        i++;
+      }
+
+      // Hide all content divs except the first
+      var i = 0;
+
+      for ( var id in contentDivs ) {
+        if ( i != 0 ) contentDivs[id].className = 'tabContent hidden';
+        i++;
+      }
+    }
+    function showTab() {
+      var selectedId = getHash( this.getAttribute('href') );
+
+      // Highlight the selected tab, and dim all others.
+      // Also show the selected content div, and hide all others.
+      for ( var id in contentDivs ) {
+        if ( id == selectedId ) {
+          tabLinks[id].className = 'selected';
+          contentDivs[id].className = 'tabContent';
+        } else {
+          tabLinks[id].className = '';
+          contentDivs[id].className = 'tabContent hidden';
+        }
+      }
+
+      // Stop the browser following the link
+      return false;
+    }
+
+    function getFirstChildWithTagName( element, tagName ) {
+      for ( var i = 0; i < element.childNodes.length; i++ ) {
+        if ( element.childNodes[i].nodeName == tagName ) return element.childNodes[i];
+      }
+    }
+
+    function getHash( url ) {
+      var hashPos = url.lastIndexOf ( '#' );
+      return url.substring( hashPos + 1 );
+    }
+
+    //]]></script>
+</head>
+<body onload="init()">
+<div id="container">
+<div id="wrapper">
+<div id="banner">
+<div id="name">
+<h1>Shawn Witte</h1>
+<p>Mathematics Graduate Student</p>
+<p>University of California, Davis</p>
+</div>
+</div>
+<div id="tabs">
+<ul id="tabul"> <li><a href="#about">About Me</a></li>
+<li><a href="#teaching">Teaching</a></li>
+<li><a href="#research">Research</a></li>
+<li><a href="#links">Links</a></li>
+<li><a href="#nonacademic">Non-Academic</a></li>
+</ul>
+</div>
+<div id="page">
+
+<div id="sidebar">
+<img src="self.jpg" width="300px" title="Me" alt="Me" id="fac_photo" />
+<p><b>E-mail:</b> <a href="mailto:slwitte@math.ucdavis.edu">slwitte@math.ucdavis.edu</a><br />
+<b>Office:</b> MSB 3123<br />
+<b>Office Hours: <a href="https://www.math.ucdavis.edu/resources/calc_room/">MAT 17 calc room</a> Wednesdays 1-2pm<br />
+<b>CV:</b> <a href="CV.pdf" target="_blank">curriculum vitae</a><br />
+<a href="http://www.linkedin.com/pub/shawn-witte/95/358/730" target="_blank"><img src="external_resources/linkedin_icon.png" alt="LinkedIn" style="height:25px;width:25px"></a>
+<a href="https://github.com/Minirogue" target="_blank"><img src="external_resources/github_icon.png" alt="GitHub" style="height:25px;width:25px"></a>
+<a href="https://twitter.com/Minirogue" target="_blank"><img src="external_resources/twitter_icon.png" alt="Twitter" style="height:25px;width:25px"></a></p>
+</div>
+
+<div class="tabContent" id="about">
+<p>I am a fifth year graduate student in the pure mathematics program at UC Davis. I am currently working in the <a href="http://arsuaga-vazquez-lab.faculty.ucdavis.edu/">Arsuaga-Vazquez lab</a> with <a href="http://www.math.ucdavis.edu/~mariel/">Mariel Vazquez</a> in the field of DNA topology/computational knot theory.
+<p>I earned my BS in mathematics from Central Michigan University in December 2010, and my MA in mathematics from Central in June 2013. I am currently wrapping up my PhD. </p>
+<p>My outside hobbies include music (sometimes attempting to play it), comics, Dungeons &amp; Dragons, pole fitness, mermaiding, yoga, Rocky Horror Picture Show, and learning languages.</p>
+</div>
+
+<div class="tabContent" id="teaching">
+<p>I have been a TA at UCD from fall 2013 to the present for the following courses:<br />
+<a href="https://www.math.ucdavis.edu/courses/syllabus_detail?cm_id=8">MAT 17B</a>: Calculus for Biology and Medicine<br />
+<a href="https://www.math.ucdavis.edu/courses/syllabus_detail?cm_id=56">MAT 21C</a>: Calculus: Partial Derivatives and Series<br />
+<a href="https://www.math.ucdavis.edu/courses/syllabus_detail?cm_id=104">MAT 124</a>: Mathematical Biology<br />
+<a href="https://www.math.ucdavis.edu/courses/syllabus_detail?cm_id=71">MAT 125A</a> and <a href="https://www.math.ucdavis.edu/courses/syllabus_detail?cm_id=72">MAT 125B</a>: Real Analysis<br />
+<a href="https://www.math.ucdavis.edu/courses/syllabus_detail?cm_id=108">MAT 141</a>: Euclidean Geometry<br />
+<a href="https://www.math.ucdavis.edu/courses/syllabus_detail?cm_id=111">MAT 147</a>: Topology<br />
+<a href="https://www.math.ucdavis.edu/courses/syllabus_detail?cm_id=84">MAT 150A</a>: Modern Algebra
+</p>
+<p>Also, I have taught the following courses as an associate instructor:<br />
+<a href="16A">MAT 16A</a> (Fall 2014 and Summer Session I, 2015)<br />
+<a href="17B">MAT 17B</a> (Summer Session I, 2015)<br />
+<a href="17C">MAT 17C</a> (Summer Session II, 2014)<br />
+<a href="125A">MAT 125A</a> (Summer Session I, 2017)</p>
+<p>In addition from 2011-2013 while working on my M.A. I taught the following courses at Central Michigan University:<br />
+Intermediate Algebra<br />
+Plane Trigonometry<br />
+Business Calculus</p>
+</div>
+
+
+<div class="tabContent" id="research">
+ 
+  <h3>Grid Diagrams</h3>
+<p>My current work involves using Markov chains to explore the trends of projected writhe of grid diagrams of knots as well as some more general combinatorial questions regarding grid diagrams.</p>
+  <h3>Publications</h3>
+  <p>
+  	<a href="https://www.mdpi.com/2073-8994/10/11/604">A Symmetry Motivated Link Table</a> - Using writhe data gathered from Monte Carlo sampling of links in the simple cubic lattice, we presented a way to choose a standard isotopy class for links with minimum crossing number 9 or less. This should aid in the communication of future research where link symmetries may be important.
+  </p>
+
+  <h3>Master's Thesis</h3>
+  <a href="https://scholarly.cmich.edu/cgi-bin/cmuscholarly?a=d&d=CMUGR2013-89&e=-------en-10--1--txt-txIN%7ctxAUF%7ctxTI--------" target="_blank">Covering Regions with k-Transmitters</a> - Master's thesis exploring the k-transmitter problem, which is an extension of the art gallery problem.<br />
+
+  <h3>Posters</h3>
+<p><a href="research/BlackwellTapiaPoster.pdf" target="_blank">2016 Blackwell-Tapia Conference and Award Ceremony</a><br />
+<a href="research/goldensectionposter.pdf" target="_blank">Winter 2016 MAA Golden Section Meeting</a></p></div>
+
+<div class="tabContent" id="links">
+  <h3>My Links</h3>
+<a href="CV.pdf" target="_blank">Curriculum Vitae/Resume</a> - Last updated March 2018.<br />
+<!--<a href="http://www.youtube.com/user/Minirogue115" target="_blank">Youtube account</a> - I sometimes post videos for the classes I teach and TA.<br />-->
+<a href="http://www.linkedin.com/pub/shawn-witte/95/358/730" target="_blank">LinkedIn account</a> - Feel free to connect if we know each other.<br />
+<a href="https://github.com/Minirogue" target="_blank">GitHub account</a> - Code from projects I've worked on<br />
+  <h3>Useful Math Resources</h3>
+<a href="http://people.math.gatech.edu/~cain/textbooks/onlinebooks.html">This list</a> compiled by George Cain of Georgia Institute of Technology contains links to many legally freely available mathematics textbooks. <br />
+<a href="http://cremeronline.com/LaTeX/minimaltikz.pdf">A Very Minimal Introduction to TikZ</a> - An excellent guide to basic commands for drawing pictures in LaTex by Jaques Cr&eacute;mer</div>
+
+<div class="tabContent" id="nonacademic">
+<a href="http://kdrt.org/musiceclectica" target="_blank">Music Eclectica</a> - My radio show on KDRT. <br />
+<a href="http://www.last.fm/user/Minirogue" target="_blank">My Last.fm profile</a> - A catalogue of my music listening habits since 2007. <br />
+<a href="https://twitter.com/Minirogue" target="_blank">My Twitter</a> - Tweet tweet.
+</div>
+
+</div>
+</div>
+</div>
+<small><script language="javascript"> 
+months = ['January', 'Febraury', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; 
+var theDate = new Date(document.lastModified); 
+theDate.setTime((theDate.getTime()-(7000*60*60)) ) 
+with (theDate) { 
+document.write("<i>Last updated "+months[getMonth()]+' '+getDate()+', '+getFullYear()+" </i>") 
+function n(n){
+    return n > 9 ? "" + n: "0" + n;
+}
+} 
+</script> 
+</script></small>
+</body>
+</html>
