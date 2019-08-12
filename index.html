@@ -5,7 +5,7 @@
 <title>Shawn Witte: Department of Mathematics</title>
 <link href="defaultstyle.css" rel="stylesheet" media="screen" />
 <link rel="icon" href="witteicon.ico" type="image/x-icon" />
-<script type="text/JavaScript" src="curvycorners.js"></script>
+<script type="text/javaScript" src="curvycorners.js"></script>
 <script type="text/javascript">
     //<![CDATA[
 
@@ -88,10 +88,10 @@
 </div>
 <div id="tabs">
 <ul id="tabul"> <li><a href="#about">About Me</a></li>
-<li><a href="#teaching">Teaching</a></li>
+<!-- <li><a href="#teaching">Teaching</a></li> -->
 <li><a href="#research">Research</a></li>
-<li><a href="#nonacademic">Non-Academic</a></li>
-<li><a href="#personalprojects">Personal Projects</a></li>
+<!-- <li><a href="#nonacademic">Non-Academic</a></li> -->
+<li><a href="#personalprojects">Projects</a></li>
 <li><a href="#links">Links</a></li>
 </ul>
 </div>
@@ -100,22 +100,33 @@
 <div id="sidebar">
 <img src="self.jpg" width="300px" title="Me" alt="Me" id="fac_photo" />
 <p><b>E-mail:</b> <a href="mailto:slwitte@math.ucdavis.edu">slwitte@math.ucdavis.edu</a><br />
-<b>Resume:</b> <a href="resources/ResumePublic.pdf" target="_blank">pdf</a><br />
-<a href="http://www.linkedin.com/pub/shawn-witte/95/358/730" target="_blank"><img src="resources/linkedin_icon.png" alt="LinkedIn" style="height:25px;width:25px"></a>
-<a href="https://github.com/Minirogue" target="_blank"><img src="resources/github_icon.png" alt="GitHub" style="height:25px;width:25px"></a>
-<a href="https://twitter.com/Minirogue" target="_blank"><img src="resources/twitter_icon.png" alt="Twitter" style="height:25px;width:25px"></a></p>
+<b>Résumé:</b> <a href="resources/ResumePublic.pdf" target="_blank">pdf</a><br />
+<a href="http://www.linkedin.com/pub/shawn-witte/95/358/730" target="_blank"><img src="resources/linkedin_icon.png" alt="LinkedIn" style="height:25px;width:25px" /></a>
+<a href="https://github.com/Minirogue" target="_blank"><img src="resources/github_icon.png" alt="GitHub" style="height:25px;width:25px" /></a>
+<a href="https://twitter.com/Minirogue" target="_blank"><img src="resources/twitter_icon.png" alt="Twitter" style="height:25px;width:25px" /></a></p>
+<p><small><script type="text/javascript"> 
+months = ['January', 'Febraury', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; 
+var theDate = new Date(document.lastModified); 
+theDate.setTime((theDate.getTime()-(7000*60*60)) ) 
+with (theDate) { 
+document.write("Page last updated "+months[getMonth()]+' '+getDate()+', '+getFullYear()) 
+function n(n){
+    return n > 9 ? "" + n: "0" + n;
+}
+} 
+</script> </small></p>
 </div>
 
 <div class="tabContent" id="about">
 <p>Hi, I'm Shawn.
 I'm currently finishing up a PhD in mathematics at the University of California, Davis.
 My work has been in the field of DNA topology/computational knot theory under <a href="http://www.math.ucdavis.edu/~mariel/">Mariel Vazquez</a> in the <a href="http://arsuaga-vazquez-lab.faculty.ucdavis.edu/">Arsuaga-Vazquez lab</a>.
-Previously I earned a BS in mathematics from Central Michigan University in December 2010, and my MA in mathematics from Central in June 2013.
+Previously I earned a BS in mathematics from Central Michigan University in December 2010, and my MA in mathematics from Central in June 2013.</p>
 <p>I host a radio show on KDRT 95.7FM called <a href="http://kdrt.org/musiceclectica" target="_blank">Music Eclectica</a> where I share my varied tastes in music with the world.</p>
 <p>I have also been writing a few Android apps in my spare time. The only one currently public is my Star Wars canon tracker, which can be found <a href="https://play.google.com/store/apps/details?id=com.minirogue.starwarscanontracker">here</a>. The code for it is freely available and can be found <a href="https://github.com/Minirogue/SWMediaTracker">here</a>.</p>
 </div>
 
-<div class="tabContent" id="teaching">
+<!-- <div class="tabContent" id="teaching">
 <p>I have been a TA at UCD from fall 2013 to the present for the following courses:<br />
 <a href="https://www.math.ucdavis.edu/courses/syllabus_detail?cm_id=8">MAT 17B</a>: Calculus for Biology and Medicine<br />
 <a href="https://www.math.ucdavis.edu/courses/syllabus_detail?cm_id=56">MAT 21C</a>: Calculus: Partial Derivatives and Series<br />
@@ -134,12 +145,14 @@ Previously I earned a BS in mathematics from Central Michigan University in Dece
 Intermediate Algebra<br />
 Plane Trigonometry<br />
 Business Calculus</p>
-</div>
+</div> -->
 
 <div class="tabContent" id="personalprojects">
 <p>In addition to my academic work, I have a few personal projects:</p>
-  <p>HoloCanon: An Unofficial Star Wars Canon Tracker (<a href="https://play.google.com/store/apps/details?id=com.minirogue.starwarscanontracker">Play Store</a>, <a href="https://github.com/Minirogue/SWMediaTracker">GitHub</a>): This is an Android app I wrote to help myself keep track of what canonical Star Wars media I have and haven't consumed yet. I decided to flesh it out and release it for my fellow nerds. It has been received extremely well so far.</p>
-  <p>MuchToDo: This is another Android app that I'm working on. There may already be a lot of to-do list apps out there, but none of the apps I have found have been able to do exactly what I wanted. So my solution was to make my own. The primary features are task hierarchies and task contexts. More specifically, some tasks have sub-tasks that need to be completed, and sometimes those tasks have their own subtasks, which is a structure that most to-do list apps do not facilitate. Task contexts refers to date, time, location, mood, or anything else the user wishes to define as an appropriate or inappropriate time for a task. This way tasks can be filtered according to what is most relevant to the user at the time. While most of the core features have been coded, the app is still a work in progress, and there is no current timeline for its release.</p>
+<h3>HoloCanon (Android App: <a href="https://play.google.com/store/apps/details?id=com.minirogue.starwarscanontracker">Play Store</a>, <a href="https://github.com/Minirogue/SWMediaTracker">GitHub</a>)</h3>
+  <p>This is an Android app I wrote to help myself keep track of what canonical Star Wars media I have and haven't consumed yet. I decided to flesh it out and release it for my fellow nerds. It has been received extremely well so far.</p>
+  <h3>MuchToDo (Android App)</h3>
+  <p>This is another Android app that I'm working on. There may already be a lot of to-do list apps out there, but none of the apps I have found have been able to do exactly what I wanted. So my solution was to make my own. The primary features are task hierarchies and task contexts. More specifically, some tasks have sub-tasks that need to be completed, and sometimes those tasks have their own subtasks, which is a structure that most to-do list apps do not facilitate. Task contexts refers to date, time, location, mood, or anything else the user wishes to define as an appropriate or inappropriate time for a task. This way tasks can be filtered according to what is most relevant to the user at the time. While most of the core features have been coded, the app is still a work in progress, and there is no current timeline for its release.</p>
 </div>
 
 
@@ -153,7 +166,7 @@ Business Calculus</p>
   </p>
 
   <h3>Master's Thesis</h3>
-  <a href="https://scholarly.cmich.edu/cgi-bin/cmuscholarly?a=d&d=CMUGR2013-89&e=-------en-10--1--txt-txIN%7ctxAUF%7ctxTI--------" target="_blank">Covering Regions with k-Transmitters</a> - Master's thesis exploring the k-transmitter problem, which is an extension of the art gallery problem.<br />
+  <a href="https://scholarly.cmich.edu/cgi-bin/cmuscholarly?a=d&amp;d=CMUGR2013-89&amp;e=-------en-10--1--txt-txIN%7ctxAUF%7ctxTI--------" target="_blank">Covering Regions with k-Transmitters</a> - Master's thesis exploring the k-transmitter problem, which is an extension of the art gallery problem.<br />
 
   <h3>Posters</h3>
 <p><a href="research/BlackwellTapiaPoster.pdf" target="_blank">2016 Blackwell-Tapia Conference and Award Ceremony</a><br />
@@ -161,34 +174,25 @@ Business Calculus</p>
 
 <div class="tabContent" id="links">
   <h3>My Links</h3>
-<a href="CV.pdf" target="_blank">Curriculum Vitae/Resume</a> - Last updated March 2018.<br />
+<a href="resources/ResumePublic.pdf" target="_blank"><b>Current Résumé</b></a> - Last updated August 2019.<br />
 <!--<a href="http://www.youtube.com/user/Minirogue115" target="_blank">Youtube account</a> - I sometimes post videos for the classes I teach and TA.<br />-->
-<a href="http://www.linkedin.com/pub/shawn-witte/95/358/730" target="_blank">LinkedIn account</a> - Feel free to connect if we know each other.<br />
-<a href="https://github.com/Minirogue" target="_blank">GitHub account</a> - Code from projects I've worked on<br />
+<a href="http://www.linkedin.com/pub/shawn-witte/95/358/730" target="_blank"><b>LinkedIn account</b></a> - Feel free to connect if we know each other.<br />
+<a href="https://github.com/Minirogue" target="_blank"><b>GitHub account</b></a> - Code from projects I've worked on.<br />
+<a href="http://kdrt.org/musiceclectica" target="_blank"><b>Music Eclectica</b></a> - My radio show on KDRT. <br />
+<a href="http://www.last.fm/user/Minirogue" target="_blank"><b>Last.fm profile</b></a> - A catalogue of my music listening habits since 2007. <br />
+<a href="https://twitter.com/Minirogue" target="_blank"><b>Twitter</b></a> - Tweet tweet.
   <h3>Useful Math Resources</h3>
 <a href="http://people.math.gatech.edu/~cain/textbooks/onlinebooks.html">This list</a> compiled by George Cain of Georgia Institute of Technology contains links to many legally freely available mathematics textbooks. <br />
 <a href="http://cremeronline.com/LaTeX/minimaltikz.pdf">A Very Minimal Introduction to TikZ</a> - An excellent guide to basic commands for drawing pictures in LaTex by Jaques Cr&eacute;mer</div>
 
-<div class="tabContent" id="nonacademic">
+<!-- <div class="tabContent" id="nonacademic">
 <a href="http://kdrt.org/musiceclectica" target="_blank">Music Eclectica</a> - My radio show on KDRT. <br />
 <a href="http://www.last.fm/user/Minirogue" target="_blank">My Last.fm profile</a> - A catalogue of my music listening habits since 2007. <br />
 <a href="https://twitter.com/Minirogue" target="_blank">My Twitter</a> - Tweet tweet.
-</div>
+</div> -->
 
 </div>
 </div>
 </div>
-<small><script language="javascript"> 
-months = ['January', 'Febraury', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; 
-var theDate = new Date(document.lastModified); 
-theDate.setTime((theDate.getTime()-(7000*60*60)) ) 
-with (theDate) { 
-document.write("<i>Last updated "+months[getMonth()]+' '+getDate()+', '+getFullYear()+" </i>") 
-function n(n){
-    return n > 9 ? "" + n: "0" + n;
-}
-} 
-</script> 
-</script></small>
 </body>
 </html>
