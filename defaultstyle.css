@@ -60,8 +60,11 @@ body {
 	font-family: Georgia;
 	
 	background-image: url(banner.jpg);
-	height: 390px;
-	
+	background-size:     contain;                     
+    background-repeat:   no-repeat;
+    background-position: center center;              
+	height: 300px;
+		
 
 }
 #name {
