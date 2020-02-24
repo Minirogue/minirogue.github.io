@@ -86,10 +86,10 @@ h1 {
 	font-weight: normal;
 }
 h2 {
-	margin-top:0;
-	color:#494949;
-	font-weight:normal;
-	font-size:200%;
+	margin:0;
+	padding-left: 20px;
+	font-size:18px;
+	font-weight: normal;
 }
 
 
