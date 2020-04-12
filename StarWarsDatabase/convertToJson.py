@@ -17,7 +17,7 @@ def convertToJsonByWholeItem(csvName):
 		reader = csv.DictReader(csvFile)
 		for row in reader:
 			itemList.append(row)
-	with open('json/%s.json' % csvName, 'w') as jsonFile:
+	with open('%s' % csvName, 'w') as jsonFile:
 		jsonFile.write(json.dumps(itemList, indent=4))
 
 def convertToJsonById(csvName, idString):
@@ -26,7 +26,7 @@ def convertToJsonById(csvName, idString):
 		reader = csv.DictReader(csvFile)
 		for row in reader:
 			itemDict[row[idString]] = row
-	with open('json/%s.json' % csvName, 'w') as jsonFile:
+	with open('%s' % csvName, 'w') as jsonFile:
 		jsonFile.write(json.dumps(itemDict, indent=4))
 
 
