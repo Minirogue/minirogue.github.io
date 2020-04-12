@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "name": "IDW"
+    },
+    {
+        "id": "2",
+        "name": "Marvel"
+    },
+    {
+        "id": "3",
+        "name": "Disney"
+    },
+    {
+        "id": "4",
+        "name": "Del Rey Books"
+    },
+    {
+        "id": "5",
+        "name": "Random House"
+    },
+    {
+        "id": "6",
+        "name": "20th Century Fox"
+    },
+    {
+        "id": "7",
+        "name": "Disney-Lucasfilm Press"
+    },
+    {
+        "id": "8",
+        "name": "Warner Bros."
+    },
+    {
+        "id": "9",
+        "name": "Cartoon Network"
+    },
+    {
+        "id": "10",
+        "name": "Netflix"
+    },
+    {
+        "id": "11",
+        "name": "Electronic Arts"
+    },
+    {
+        "id": "12",
+        "name": "Golden Books"
+    }
+]

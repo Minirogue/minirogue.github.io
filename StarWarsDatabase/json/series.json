@@ -1,0 +1,356 @@
+[
+    {
+        "id": "1",
+        "name": "Choose Your Destiny",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "2",
+        "name": "Adventures in Wild Space",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "3",
+        "name": "Flight of the Falcon",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "4",
+        "name": "Servants of the Empire",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "5",
+        "name": "The Clone Wars",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "6",
+        "name": "Rebels",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "7",
+        "name": "Resistance",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "8",
+        "name": "Aftermath",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "9",
+        "name": "Battlefront",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "10",
+        "name": "Join the Resistance",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "11",
+        "name": "Obi-Wan & Anakin",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "12",
+        "name": "Tie Fighter",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "13",
+        "name": "Chewbacca",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "14",
+        "name": "Darth Vader",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "15",
+        "name": "Age of Republic",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "16",
+        "name": "Age of Rebellion",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "17",
+        "name": "Darth Vader: Dark Lord of the Sith",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "18",
+        "name": "Doctor Aphra",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "19",
+        "name": "Jedi of the Republic: Mace Windu",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "20",
+        "name": "Kanan",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "21",
+        "name": "Lando",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "22",
+        "name": "Lando: Double or Nothing",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "23",
+        "name": "Poe Dameron",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "24",
+        "name": "Princess Leia",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "25",
+        "name": "Shattered Empire",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "26",
+        "name": "Thrawn",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "27",
+        "name": "Marvel's Star Wars (2015)",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "28",
+        "name": "The Force Awakens (comic)",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "29",
+        "name": "Rogue One: A Star Wars Story (comic)",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "30",
+        "name": "Age of Resistance",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "31",
+        "name": "Galaxy's Edge",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "32",
+        "name": "Darth Maul: Son of Dathomir",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "33",
+        "name": "Han Solo",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "34",
+        "name": "Darth Maul",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "35",
+        "name": "Captain Phasma",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "36",
+        "name": "Forces of Destiny",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "37",
+        "name": "Tales from Vader's Castle",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "38",
+        "name": "Han Solo - Imperial Cadet",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "39",
+        "name": "Vader - Dark Visions",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "40",
+        "name": "Target Vader",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "41",
+        "name": "Jedi: Fallen Order - Dark Temple",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "42",
+        "name": "Allegiance",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "43",
+        "name": "Star Wars Adventures",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "44",
+        "name": "The Mandalorian",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "45",
+        "name": "The Last Jedi (comic)",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "46",
+        "name": "Return to Vader's Castle",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "47",
+        "name": "Solo: A Star Wars Story (comic)",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "48",
+        "name": "Destroyer Down",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "49",
+        "name": "The Rise of Kylo Ren",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "50",
+        "name": "Marvel's Star Wars (2020)",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "51",
+        "name": "Star Wars (movies)",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "52",
+        "name": "Alphabet Squadrion (trilogy)",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "53",
+        "name": "Ascendency Trilogy",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "54",
+        "name": "Darth Vader (2020)",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "55",
+        "name": "Bounty Hunters",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "56",
+        "name": "Doctor Aphra (2020)",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "57",
+        "name": "The Clone Wars - Battle Tales",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "58",
+        "name": "The Rise of Skywalker (comics)",
+        "image": "",
+        "description": ""
+    },
+    {
+        "id": "59",
+        "name": "The High Republic",
+        "image": "",
+        "description": ""
+    }
+]

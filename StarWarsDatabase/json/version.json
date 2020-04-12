@@ -1,0 +1,22 @@
+{
+    "database": {
+        "name": "database",
+        "version": "16"
+    },
+    "people": {
+        "name": "people",
+        "version": "16"
+    },
+    "media_types": {
+        "name": "media_types",
+        "version": "16"
+    },
+    "series": {
+        "name": "series",
+        "version": "16"
+    },
+    "companies": {
+        "name": "companies",
+        "version": "16"
+    }
+}

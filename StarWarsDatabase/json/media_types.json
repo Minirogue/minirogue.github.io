@@ -1,0 +1,54 @@
+[
+    {
+        "id": "1",
+        "media_type": "Movie"
+    },
+    {
+        "id": "2",
+        "media_type": "Novelization"
+    },
+    {
+        "id": "3",
+        "media_type": "Original Novel"
+    },
+    {
+        "id": "4",
+        "media_type": "Video Game"
+    },
+    {
+        "id": "5",
+        "media_type": "Youth"
+    },
+    {
+        "id": "6",
+        "media_type": "Reference"
+    },
+    {
+        "id": "7",
+        "media_type": "Comic Book"
+    },
+    {
+        "id": "8",
+        "media_type": "TPB"
+    },
+    {
+        "id": "9",
+        "media_type": "TV Season"
+    },
+    {
+        "id": "10",
+        "media_type": "TV Episode"
+    },
+    {
+        "id": "11",
+        "media_type": "Comic Adaptation"
+    },
+    {
+        "id": "12",
+        "media_type": "TPB Adaptation"
+    },
+    {
+        "id": "13",
+        "media_type": "Short"
+    }
+]
