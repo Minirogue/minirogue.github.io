@@ -1,0 +1,12 @@
+{
+    "id": 11,
+    "title": "Solo: A Star Wars Story",
+    "type": "Movie",
+    "imageUrl": "https://minirogue.github.io/SWCovers/Movies/solo_a_star_wars_story.jpg",
+    "releaseDate": "5/25/2018",
+    "timeline": -12.0,
+    "description": "A movie about a young Han Solo.",
+    "series": null,
+    "number": null,
+    "publisher": "Disney"
+}

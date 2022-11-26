@@ -1,0 +1,12 @@
+{
+    "id": 15,
+    "title": "Episode IX: The Rise of Skywalker",
+    "type": "Movie",
+    "imageUrl": "https://minirogue.github.io/SWCovers/Movies/the_rise_of_skywalker.jpg",
+    "releaseDate": "12/20/2019",
+    "timeline": 35.0,
+    "description": "The conclusion of the numbered episodic Star Wars movies.",
+    "series": "Star Wars (movies)",
+    "number": 9,
+    "publisher": "Disney"
+}

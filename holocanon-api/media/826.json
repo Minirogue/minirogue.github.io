@@ -1,0 +1,12 @@
+{
+    "id": 826,
+    "title": "Star Wars Saga #1",
+    "type": "Comic Book",
+    "imageUrl": "https://minirogue.github.io/SWCovers/Comics/star_wars_saga_1.jpg",
+    "releaseDate": "12/4/2019",
+    "timeline": 1.9,
+    "description": "A primer of moments from the Star Wars (2015) run.",
+    "series": null,
+    "number": 1,
+    "publisher": "Marvel"
+}

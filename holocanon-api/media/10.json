@@ -1,0 +1,12 @@
+{
+    "id": 10,
+    "title": "The Clone Wars",
+    "type": "Movie",
+    "imageUrl": "https://minirogue.github.io/SWCovers/Movies/the_clone_wars.jpg",
+    "releaseDate": "8/15/2008",
+    "timeline": -21.0,
+    "description": "Computer animated move which serves as a prologue for the TV series of the same name.",
+    "series": "The Clone Wars",
+    "number": 0,
+    "publisher": "Warner Bros."
+}

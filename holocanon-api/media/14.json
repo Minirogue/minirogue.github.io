@@ -1,0 +1,12 @@
+{
+    "id": 14,
+    "title": "Episode VIII: The Last Jedi",
+    "type": "Movie",
+    "imageUrl": "https://minirogue.github.io/SWCovers/Movies/the_last_jedi.jpg",
+    "releaseDate": "12/15/2017",
+    "timeline": 34.5,
+    "description": "This is the move that comes after episode VII and before episode IX.",
+    "series": "Star Wars (movies)",
+    "number": 8,
+    "publisher": "Disney"
+}
