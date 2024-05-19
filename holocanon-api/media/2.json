@@ -5,8 +5,9 @@
     "imageUrl": "https://minirogue.github.io/SWCovers/Movies/empire_strikes_back.jpg",
     "releaseDate": "6/20/1980",
     "timeline": 3.0,
-    "description": "In this sequel the Empire strikes back! Oh; you already knew that? Okay; well Lando's in this one. So that's cool.",
+    "description": "In this sequel the Empire strikes back! Oh, you already knew that? Okay, well Lando's in this one. So that's cool.",
     "series": "Star Wars (movies)",
     "number": 5,
-    "publisher": "20th Century Fox"
+    "publisher": "20th Century Fox",
+    "ranking": 1
 }

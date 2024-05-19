@@ -8,5 +8,6 @@
     "description": "The conclusion of the numbered episodic Star Wars movies.",
     "series": "Star Wars (movies)",
     "number": 9,
-    "publisher": "Disney"
+    "publisher": "Disney",
+    "ranking": 10
 }

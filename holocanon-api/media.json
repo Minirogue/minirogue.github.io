@@ -9,7 +9,8 @@
         "description": "The movie that started it all. Luke Skywalker is a young moisture farmer with a great destiny ahead as he journeys into space to save the princess and get the Empire's evil plans into the hands of the heroic terrorist group known as the Rebel Alliance.",
         "series": "Star Wars (movies)",
         "number": 4,
-        "publisher": "20th Century Fox"
+        "publisher": "20th Century Fox",
+        "ranking": 3
     },
     {
         "id": 2,
@@ -18,10 +19,11 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/Movies/empire_strikes_back.jpg",
         "releaseDate": "6/20/1980",
         "timeline": 3.0,
-        "description": "In this sequel the Empire strikes back! Oh; you already knew that? Okay; well Lando's in this one. So that's cool.",
+        "description": "In this sequel the Empire strikes back! Oh, you already knew that? Okay, well Lando's in this one. So that's cool.",
         "series": "Star Wars (movies)",
         "number": 5,
-        "publisher": "20th Century Fox"
+        "publisher": "20th Century Fox",
+        "ranking": 1
     },
     {
         "id": 3,
@@ -30,7 +32,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/Novels/lost_stars.jpg",
         "releaseDate": "9/4/2015",
         "timeline": 4.8,
-        "description": "This follows Thane Kyrell and Ciena Ree; two childhood friends from the outer rim; as they take part in the galactic civil war of Episodes IV-VI. They enlist as together as officers in the Imperial Navy and are thrilled to work on such a magnificent battle station. Until the events of Episode IV causes one of them to defect to the Rebel Alliance. This book follows these characters through all of the main events of Episodes IV; V; and VI; and slightly beyond to the battle of Jakku.",
+        "description": "This follows Thane Kyrell and Ciena Ree, two childhood friends from the outer rim, as they take part in the galactic civil war of Episodes IV-VI. They enlist as together as officers in the Imperial Navy and are thrilled to work on such a magnificent battle station. Until the events of Episode IV causes one of them to defect to the Rebel Alliance. This book follows these characters through all of the main events of Episodes IV, V, and VI, and slightly beyond to the battle of Jakku.",
         "series": null,
         "number": null,
         "publisher": "Disney-Lucasfilm Press"
@@ -42,10 +44,11 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/Movies/return_of_the_jedi.jpg",
         "releaseDate": "5/25/1983",
         "timeline": 4.0,
-        "description": "The thrilling conclusion of the Star Wars saga (until extended universe novels dealt with what happens after this movie; and then Disney acquired the franchise and decided this wasn't the end).",
+        "description": "The thrilling conclusion of the Star Wars saga (until extended universe novels dealt with what happens after this movie, and then Disney acquired the franchise and decided this wasn't the end).",
         "series": "Star Wars (movies)",
         "number": 6,
-        "publisher": "20th Century Fox"
+        "publisher": "20th Century Fox",
+        "ranking": 4
     },
     {
         "id": 5,
@@ -78,10 +81,11 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/Movies/the_phantom_menace.jpg",
         "releaseDate": "5/19/1999",
         "timeline": -32.0,
-        "description": "The fourth Star Wars movie; but the first episode; because George Lucas said so. This is the beginning of the prequel trilogy; taking place in a time of relative peace when Jedi numbered in the thousands and the Sith had been eradicated. Oh wait; there's a Sith... Uh oh.",
+        "description": "The fourth Star Wars movie, but the first episode, because George Lucas said so. This is the beginning of the prequel trilogy, taking place in a time of relative peace when Jedi numbered in the thousands and the Sith had been eradicated. Oh wait, there's a Sith... Uh oh.",
         "series": "Star Wars (movies)",
         "number": 1,
-        "publisher": "20th Century Fox"
+        "publisher": "20th Century Fox",
+        "ranking": 8
     },
     {
         "id": 8,
@@ -93,7 +97,8 @@
         "description": "This is the move that comes after episode I and before episode III.",
         "series": "Star Wars (movies)",
         "number": 2,
-        "publisher": "20th Century Fox"
+        "publisher": "20th Century Fox",
+        "ranking": 11
     },
     {
         "id": 9,
@@ -102,10 +107,11 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/Movies/revenge_of_the_sith.jpg",
         "releaseDate": "5/19/2005",
         "timeline": -19.0,
-        "description": "The thrilling preclusion... wait that doesn't mean conclusion of prequels; but pretend it does. It's the last movie of the prequel trilogy. A lot of people like this one best of the prequels. I was always more of a Phantom Menace kinda guy; but I will admit that this one has the best Anakin hair.",
+        "description": "The thrilling preclusion... wait that doesn't mean conclusion of prequels, but pretend it does. It's the last movie of the prequel trilogy. A lot of people like this one best of the prequels. I was always more of a Phantom Menace kinda guy, but I will admit that this one has the best Anakin hair.",
         "series": "Star Wars (movies)",
         "number": 3,
-        "publisher": "20th Century Fox"
+        "publisher": "20th Century Fox",
+        "ranking": 9
     },
     {
         "id": 10,
@@ -117,7 +123,8 @@
         "description": "Computer animated move which serves as a prologue for the TV series of the same name.",
         "series": "The Clone Wars",
         "number": 0,
-        "publisher": "Warner Bros."
+        "publisher": "Warner Bros.",
+        "ranking": 12
     },
     {
         "id": 11,
@@ -129,7 +136,8 @@
         "description": "A movie about a young Han Solo.",
         "series": null,
         "number": null,
-        "publisher": "Disney"
+        "publisher": "Disney",
+        "ranking": 5
     },
     {
         "id": 12,
@@ -138,10 +146,11 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/Movies/rogue_one_a_star_wars_story.jpg",
         "releaseDate": "12/16/2016",
         "timeline": -0.1,
-        "description": "You know about the Death Star; right? No? What are you even doing here? I don't mean to gatekeep; but why do you even have this app if you don't know what the Death Star is? Go watch Episode IV; and come back if you liked it... Did you watch it? That was pretty cool; huh? Anyways; they explain how they got the plans for the Death Star in this one. That may not have been a burning question you had; but here's your answer.",
+        "description": "In a fledgling rebelliion Jyn Erso, Cassian Andor, and K-2SO join along with others to discover the truth about a potential superweapon that Jyn's father, Galen Erso, has been working on for the ambitious Director Krennic.",
         "series": null,
         "number": null,
-        "publisher": "Disney"
+        "publisher": "Disney",
+        "ranking": 2
     },
     {
         "id": 13,
@@ -150,10 +159,11 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/Movies/the_force_awakens.jpg",
         "releaseDate": "12/18/2015",
         "timeline": 34.0,
-        "description": "The first movie of the third trilogy of the main movie saga which is the seventh movie made but...also the seventh movie in the series. Oh hey; they finally made the episode numbers line up. Anyways; this is the first movie after Disney acquired the Star Wars franchise. Rey; Finn; Poe; and the Resistance are the heroes. Kylo Ren; Hux; Phasma; Snoke; and the First Order are the bad guys. How did the First Order acquire so much power under the New Republic's nose in the thirty years since the end of Episode VI? Where did they get all their funding? I don't know; Helen.",
+        "description": "The first movie of the third trilogy of the main movie saga which is the seventh movie made but...also the seventh movie in the series. Oh hey, they finally made the episode numbers line up. Anyways, this is the first movie after Disney acquired the Star Wars franchise. Rey, Finn, Poe, and the Resistance are the heroes. Kylo Ren, Hux, Phasma, Snoke, and the First Order are the bad guys. How did the First Order acquire so much power under the New Republic's nose in the thirty years since the end of Episode VI? Where did they get all their funding? I don't know, Helen.",
         "series": "Star Wars (movies)",
         "number": 7,
-        "publisher": "Disney"
+        "publisher": "Disney",
+        "ranking": 7
     },
     {
         "id": 14,
@@ -165,7 +175,8 @@
         "description": "This is the move that comes after episode VII and before episode IX.",
         "series": "Star Wars (movies)",
         "number": 8,
-        "publisher": "Disney"
+        "publisher": "Disney",
+        "ranking": 6
     },
     {
         "id": 15,
@@ -177,7 +188,8 @@
         "description": "The conclusion of the numbered episodic Star Wars movies.",
         "series": "Star Wars (movies)",
         "number": 9,
-        "publisher": "Disney"
+        "publisher": "Disney",
+        "ranking": 10
     },
     {
         "id": 16,
@@ -222,7 +234,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/Novels/dooku_jedi_lost.jpg",
         "releaseDate": "4/30/2019",
         "timeline": -40.0,
-        "description": "Dooku: Jedi Lost follows the story of Dooku from his time as a Jedi Initiate through his departure from the Jedi Order. It's told through flashbacks as Asajj Ventress learns about his history. It ties into Master & Apprentice a little bit; as the character of Rael Aveross appears in both.",
+        "description": "Dooku: Jedi Lost follows the story of Dooku from his time as a Jedi Initiate through his departure from the Jedi Order. It's told through flashbacks as Asajj Ventress learns about his history. It ties into Master & Apprentice a little bit, as the character of Rael Aveross appears in both.",
         "series": null,
         "number": null,
         "publisher": "Random House"
@@ -246,7 +258,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/Novels/dark_disciple.jpg",
         "releaseDate": "7/7/2015",
         "timeline": -20.872,
-        "description": "Growing more desparate as the end of the Clone War seems completely out of sight; the Jedi send their own Quinlan Vos to assassinate Count Dooku. He is told to enlist the help of none other than Asajj Ventress.",
+        "description": "Growing more desparate as the end of the Clone War seems completely out of sight, the Jedi send their own Quinlan Vos to assassinate Count Dooku. He is told to enlist the help of none other than Asajj Ventress.",
         "series": null,
         "number": null,
         "publisher": "Del Rey Books"
@@ -354,7 +366,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/Novels/ahsoka.jpg",
         "releaseDate": "10/11/2016",
         "timeline": -18.0,
-        "description": "This book follows Ahsoka sometime after order 66. The audiobook is narrated by Ashley Eckstein; who voiced Ahsoka in The Clone Wars.",
+        "description": "This book follows Ahsoka sometime after order 66. The audiobook is narrated by Ashley Eckstein, who voiced Ahsoka in The Clone Wars.",
         "series": null,
         "number": null,
         "publisher": "Disney-Lucasfilm Press"
@@ -786,7 +798,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/Novels/alphabet_squadron.jpg",
         "releaseDate": "6/11/2019",
         "timeline": 4.1,
-        "description": "This novel takes place sometime after the battle of Endor (Episode VI) and before the battle of Jakku. It follows a rag-tag group (but the author is good enough to never refers to the group as rag-tag (show don't tell; y'all)) that comes together for the purpose of bringing down a Tie Fighter squad known as Shadow Wing. This novel ties in with the Tie Fighter comics.",
+        "description": "This novel takes place sometime after the battle of Endor (Episode VI) and before the battle of Jakku. It follows a rag-tag group (but the author is good enough to never refers to the group as rag-tag (show don't tell, y'all)) that comes together for the purpose of bringing down a Tie Fighter squad known as Shadow Wing. This novel ties in with the Tie Fighter comics.",
         "series": "Alphabet Squadrion (trilogy)",
         "number": null,
         "publisher": "Del Rey Books"
@@ -1026,7 +1038,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/TPB/darth_maul.jpg",
         "releaseDate": "3/14/2016",
         "timeline": -33.0,
-        "description": "Collects Darth Maul #1-5. This is set early on in Darth Mauls apprenticeship to Darth Sidious; and takes place sometime before Episode I. The plot in short: Maul really really wants to kill a Jedi.",
+        "description": "Collects Darth Maul #1-5. This is set early on in Darth Mauls apprenticeship to Darth Sidious, and takes place sometime before Episode I. The plot in short: Maul really really wants to kill a Jedi.",
         "series": "Darth Maul",
         "number": null,
         "publisher": "Marvel"
@@ -2094,7 +2106,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/TV/clone_wars_season_3.jpg",
         "releaseDate": "9/24/2010",
         "timeline": -20.998,
-        "description": "Senator Organa and Representative Binks meet with the king of Toydaria to try to negotiate the use of that neutral planet as a staging ground to bring relief supplies to the war-torn Ryloth. Meanwhile; Jedi Master Ima-Gun Di and his clone battalion work to buy the Twi'leks of Ryloth time to escape an encroaching droid army.",
+        "description": "Senator Organa and Representative Binks meet with the king of Toydaria to try to negotiate the use of that neutral planet as a staging ground to bring relief supplies to the war-torn Ryloth. Meanwhile, Jedi Master Ima-Gun Di and his clone battalion work to buy the Twi'leks of Ryloth time to escape an encroaching droid army.",
         "series": "The Clone Wars",
         "number": 303,
         "publisher": "Cartoon Network"
@@ -4410,7 +4422,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/Comics/tie_fighter_1.jpg",
         "releaseDate": "4/17/2019",
         "timeline": 3.101,
-        "description": "We meet the 204th; also known as Shadow Wing; a squadron of pilots who are good at what they do. Which is shooting down rebel scum. Their next mission is to assist a Star Destroyer that has gone out of contact. Should be easy; right?",
+        "description": "We meet the 204th, also known as Shadow Wing, a squadron of pilots who are good at what they do. Which is shooting down rebel scum. Their next mission is to assist a Star Destroyer that has gone out of contact. Should be easy, right?",
         "series": "Tie Fighter",
         "number": 1,
         "publisher": "Marvel"
@@ -4542,7 +4554,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/Comics/darth_vader_06.jpg",
         "releaseDate": "6/3/2015",
         "timeline": 1.0011,
-        "description": "Darth vader squares off against Cylo's team of warriors as they are presented to Emperor Palpatine. Afterwards he gets some interesting information from Boba Fett; who is reporting back from his mission.",
+        "description": "Darth vader squares off against Cylo's team of warriors as they are presented to Emperor Palpatine. Afterwards he gets some interesting information from Boba Fett, who is reporting back from his mission.",
         "series": "Darth Vader",
         "number": 6,
         "publisher": "Marvel"
@@ -4566,7 +4578,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/Comics/darth_vader_08.jpg",
         "releaseDate": "8/5/2015",
         "timeline": 1.0014,
-        "description": "Aphra and the bounty hunters she hired pull a heist on an imperial light cruiser. Of course; there is more to this heist than meets the eye.",
+        "description": "Aphra and the bounty hunters she hired pull a heist on an imperial light cruiser. Of course, there is more to this heist than meets the eye.",
         "series": "Darth Vader",
         "number": 8,
         "publisher": "Marvel"
@@ -5634,7 +5646,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/Comics/kanan_03.jpg",
         "releaseDate": "6/10/2015",
         "timeline": -18.797,
-        "description": "Young Caleb Dume is surrounded in his stolen ship above Coruscant. He must make a break for it; but where can he go when the whole galaxy is hunting him?",
+        "description": "Young Caleb Dume is surrounded in his stolen ship above Coruscant. He must make a break for it, but where can he go when the whole galaxy is hunting him?",
         "series": "Kanan",
         "number": 3,
         "publisher": "Marvel"
@@ -5646,7 +5658,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/Comics/kanan_04.jpg",
         "releaseDate": "7/22/2015",
         "timeline": -18.796,
-        "description": "The young padawan formerly known as Caleb Dume has been sold out... or has he? He must escape and continue to evade Commander Grey and Captain Stylez; his former one trooper allies.",
+        "description": "The young padawan formerly known as Caleb Dume has been sold out... or has he? He must escape and continue to evade Commander Grey and Captain Stylez, his former one trooper allies.",
         "series": "Kanan",
         "number": 4,
         "publisher": "Marvel"
@@ -5658,7 +5670,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/Comics/kanan_05.jpg",
         "releaseDate": "8/19/2015",
         "timeline": -18.795,
-        "description": "Commander Grey and Captain Styles have finally caught the Jedi traitor known as Caleb Dume. Is this the end for him? (This comic is an extended flashback; so the answer is kind of obvious.)",
+        "description": "Commander Grey and Captain Styles have finally caught the Jedi traitor known as Caleb Dume. Is this the end for him? (This comic is an extended flashback, so the answer is kind of obvious.)",
         "series": "Kanan",
         "number": 5,
         "publisher": "Marvel"
@@ -5766,7 +5778,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/Comics/lando_1.jpg",
         "releaseDate": "7/8/2015",
         "timeline": 0.017,
-        "description": "Lando's putting the charm on hard to settle a debt. When he comes up a little short; it's time to plan a heist. A simple enough job stealing some Imperial scum's property. It's probably not important who that idiot Imperial is...right?",
+        "description": "Lando's putting the charm on hard to settle a debt. When he comes up a little short, it's time to plan a heist. A simple enough job stealing some Imperial scum's property. It's probably not important who that idiot Imperial is...right?",
         "series": "Lando",
         "number": 1,
         "publisher": "Marvel"
@@ -5778,7 +5790,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/Comics/lando_2.jpg",
         "releaseDate": "8/12/2015",
         "timeline": 0.018,
-        "description": "Having stolen the Imperialus; one of Emperor Palpatine's personal ships; all Lando and his crew have to do is escape the gravity well and hit hyperspace. Until three star destroyers show up and get in the way; of course.",
+        "description": "Having stolen the Imperialus, one of Emperor Palpatine's personal ships, all Lando and his crew have to do is escape the gravity well and hit hyperspace. Until three star destroyers show up and get in the way, of course.",
         "series": "Lando",
         "number": 2,
         "publisher": "Marvel"
@@ -5802,7 +5814,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/Comics/lando_4.jpg",
         "releaseDate": "9/16/2015",
         "timeline": 0.02,
-        "description": "Chanath Cha catches up to the Imperialis. While examining the treasure; something strange happens to a member of the crew.",
+        "description": "Chanath Cha catches up to the Imperialis. While examining the treasure, something strange happens to a member of the crew.",
         "series": "Lando",
         "number": 4,
         "publisher": "Marvel"
@@ -6438,7 +6450,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/Comics/shattered_empire_1.jpg",
         "releaseDate": "9/9/2015",
         "timeline": 4.01,
-        "description": "The second Death Star is destroyed; and the war is over. Except for the Imperial holdouts on the other side of the forest moon off Endor. But then it's over...right?",
+        "description": "The second Death Star is destroyed, and the war is over. Except for the Imperial holdouts on the other side of the forest moon off Endor. But then it's over...right?",
         "series": "Shattered Empire",
         "number": 1,
         "publisher": "Marvel"
@@ -6474,7 +6486,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/Comics/shattered_empire_4.jpg",
         "releaseDate": "10/21/2015",
         "timeline": 4.11,
-        "description": "Shara Bey and Kes Dameron have put in there papers and are ready to go live the lives they've fought so hard for. Before that; Shara goes on one last mission with none other than Commander Luke Skywalker.",
+        "description": "Shara Bey and Kes Dameron have put in there papers and are ready to go live the lives they've fought so hard for. Before that, Shara goes on one last mission with none other than Commander Luke Skywalker.",
         "series": "Shattered Empire",
         "number": 4,
         "publisher": "Marvel"
@@ -6810,7 +6822,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/Comics/star_wars_08.jpg",
         "releaseDate": "8/19/2015",
         "timeline": 1.0015,
-        "description": "Han and Leia deal with an antagonistic Mrs. Solo. Meanwhile; Luke's search for information about the Jedi takes him to Nar Shadda.",
+        "description": "Han and Leia deal with an antagonistic Mrs. Solo. Meanwhile, Luke's search for information about the Jedi takes him to Nar Shadda.",
         "series": "Marvel's Star Wars (2015)",
         "number": 8,
         "publisher": "Marvel"
@@ -9618,7 +9630,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/TV/the_mandalorian.jpg",
         "releaseDate": "11/12/2019",
         "timeline": 7.01,
-        "description": "We are introduced to the titular character who is referred to most often as Mando. He's a Mandalorian bounty hunter; and he's very good at what he does. He takes a job that seems to be extra high risk. What kind of mark could be worth all this trouble?",
+        "description": "We are introduced to the titular character who is referred to most often as Mando. He's a Mandalorian bounty hunter, and he's very good at what he does. He takes a job that seems to be extra high risk. What kind of mark could be worth all this trouble?",
         "series": "The Mandalorian",
         "number": 101,
         "publisher": "Disney"
@@ -9738,7 +9750,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/TV/resistance.jpg",
         "releaseDate": "10/20/2019",
         "timeline": 34.502,
-        "description": "After the narrow escape of the Colossus; the ace pilots begin combat training. At the same time; Tam begins her training as a First Order pilot.",
+        "description": "After the narrow escape of the Colossus, the ace pilots begin combat training. At the same time, Tam begins her training as a First Order pilot.",
         "series": "Resistance",
         "number": 203,
         "publisher": "Disney"
@@ -9774,7 +9786,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/TV/resistance.jpg",
         "releaseDate": "11/10/2019",
         "timeline": 34.505,
-        "description": "Kaz; Torra; Flix; and Orka go to Drahgor 3 to get some fuel from Flix's cousins.",
+        "description": "Kaz, Torra, Flix, and Orka go to Drahgor 3 to get some fuel from Flix's cousins.",
         "series": "Resistance",
         "number": 206,
         "publisher": "Disney"
@@ -9786,7 +9798,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/TV/resistance.jpg",
         "releaseDate": "11/17/2019",
         "timeline": 34.506,
-        "description": "On a provision run; Kaz wanders into a Sith temple.",
+        "description": "On a provision run, Kaz wanders into a Sith temple.",
         "series": "Resistance",
         "number": 207,
         "publisher": "Disney"
@@ -10134,7 +10146,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/TV/forces_of_destiny.jpg",
         "releaseDate": "7/6/2017",
         "timeline": -20.9495,
-        "description": "On her way to a ceremony at the Jedi temple; Ahsoka gets caught up by a malfunctioning droid.",
+        "description": "On her way to a ceremony at the Jedi temple, Ahsoka gets caught up by a malfunctioning droid.",
         "series": "Forces of Destiny",
         "number": 4,
         "publisher": "Disney"
@@ -10213,7 +10225,7 @@
     },
     {
         "id": 852,
-        "title": "Teach You; I Will",
+        "title": "Teach You, I Will",
         "type": "Short",
         "imageUrl": "https://minirogue.github.io/SWCovers/TV/forces_of_destiny.jpg",
         "releaseDate": "10/3/2017",
@@ -10482,7 +10494,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/TV/rebels_season_1.jpg",
         "releaseDate": "8/11/2014",
         "timeline": -2.04,
-        "description": "The ghost in on the run from several TIE fighters. While Hera flies and Kanan mans the blasters; it's up to Chopper to do...everything else.",
+        "description": "The ghost in on the run from several TIE fighters. While Hera flies and Kanan mans the blasters, it's up to Chopper to do...everything else.",
         "series": "Rebels",
         "number": null,
         "publisher": "Disney"
@@ -10494,7 +10506,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/TV/rebels_season_1.jpg",
         "releaseDate": "8/25/2014",
         "timeline": -2.02,
-        "description": "On his way to rendezvous with Kanan; Zeb runs into some trouble...then some more.",
+        "description": "On his way to rendezvous with Kanan, Zeb runs into some trouble...then some more.",
         "series": "Rebels",
         "number": null,
         "publisher": "Disney"
@@ -10554,7 +10566,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/TV/resistance.jpg",
         "releaseDate": "12/22/2019",
         "timeline": 34.512,
-        "description": "Kaz; Jarek; and Synara respond to a Resistance distress beacon and find a bounty hunter waiting for them.",
+        "description": "Kaz, Jarek, and Synara respond to a Resistance distress beacon and find a bounty hunter waiting for them.",
         "series": "Resistance",
         "number": 212,
         "publisher": "Disney"
@@ -10614,7 +10626,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/TV/resistance.jpg",
         "releaseDate": "1/19/2020",
         "timeline": 34.517,
-        "description": "Kaz; Torra; and Hype help out the Resistance on a mission to escort recruits off of Dantooine.",
+        "description": "Kaz, Torra, and Hype help out the Resistance on a mission to escort recruits off of Dantooine.",
         "series": "Resistance",
         "number": 217,
         "publisher": "Disney"
@@ -10638,7 +10650,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/TV/the_mandalorian.jpg",
         "releaseDate": "10/31/2020",
         "timeline": 8.0,
-        "description": "Coming in October 2020. Exact date unknown.",
+        "description": null,
         "series": "The Mandalorian",
         "number": 2,
         "publisher": "Disney"
@@ -10746,7 +10758,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/Novels/shadow_fall.jpg",
         "releaseDate": "6/23/2020",
         "timeline": null,
-        "description": "The sequel to Alphabet Squadron; and the second in a trilogy.",
+        "description": "The sequel to Alphabet Squadron, and the second in a trilogy.",
         "series": "Alphabet Squadrion (trilogy)",
         "number": null,
         "publisher": "Del Rey Books"
@@ -10998,7 +11010,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/TV/clone_wars_season_7.jpg",
         "releaseDate": "3/27/2020",
         "timeline": -20.879,
-        "description": "Rafa shows up to the garage with a job; and she needs Trace and Ahsoka's help.",
+        "description": "Rafa shows up to the garage with a job, and she needs Trace and Ahsoka's help.",
         "series": "The Clone Wars",
         "number": 706,
         "publisher": "Disney"
@@ -11010,7 +11022,7 @@
         "imageUrl": "https://minirogue.github.io/SWCovers/TV/clone_wars_season_7.jpg",
         "releaseDate": "4/3/2020",
         "timeline": -20.878,
-        "description": "Ahsoka; Trace; and Rafa try to figure out a way to free themselves from the Pykes.",
+        "description": "Ahsoka, Trace, and Rafa try to figure out a way to free themselves from the Pykes.",
         "series": "The Clone Wars",
         "number": 707,
         "publisher": "Disney"
@@ -17861,8 +17873,8 @@
         "type": "TV Episode",
         "imageUrl": "https://minirogue.github.io/SWCovers/TV/tales_of_the_empire.jpg",
         "releaseDate": "5/4/2024",
-        "timeline": null,
-        "description": null,
+        "timeline": -20.9165,
+        "description": "Morgan Elspeth survives the events of the episode \"Massacre\" from The Clone Wars and must now figure out her place in the universe.",
         "series": "Tales of the Empire",
         "number": 1,
         "publisher": "Disney"
@@ -17873,8 +17885,8 @@
         "type": "TV Episode",
         "imageUrl": "https://minirogue.github.io/SWCovers/TV/tales_of_the_empire.jpg",
         "releaseDate": "5/4/2024",
-        "timeline": null,
-        "description": null,
+        "timeline": -5.9,
+        "description": "Morgan Elspeth presents a new starfighter design to the empire and is introduced to an admiral who takes an interest in it.",
         "series": "Tales of the Empire",
         "number": 2,
         "publisher": "Disney"
@@ -17885,8 +17897,8 @@
         "type": "TV Episode",
         "imageUrl": "https://minirogue.github.io/SWCovers/TV/tales_of_the_empire.jpg",
         "releaseDate": "5/4/2024",
-        "timeline": null,
-        "description": null,
+        "timeline": 6.1,
+        "description": "The New Republic pays a visit to Morgan Eslpeth on Corvus to ask her to relinquish control of the planet.",
         "series": "Tales of the Empire",
         "number": 3,
         "publisher": "Disney"
@@ -17897,8 +17909,8 @@
         "type": "TV Episode",
         "imageUrl": "https://minirogue.github.io/SWCovers/TV/tales_of_the_empire.jpg",
         "releaseDate": "5/4/2024",
-        "timeline": null,
-        "description": null,
+        "timeline": -18.9994,
+        "description": "Following order 66, Barriss Offee is given an opportunity to serve the new Empire.",
         "series": "Tales of the Empire",
         "number": 4,
         "publisher": "Disney"
@@ -17909,8 +17921,8 @@
         "type": "TV Episode",
         "imageUrl": "https://minirogue.github.io/SWCovers/TV/tales_of_the_empire.jpg",
         "releaseDate": "5/4/2024",
-        "timeline": null,
-        "description": null,
+        "timeline": -18.9993,
+        "description": "A new inquisitor goes on a mission to hunt down a Jedi.",
         "series": "Tales of the Empire",
         "number": 5,
         "publisher": "Disney"
@@ -17921,8 +17933,8 @@
         "type": "TV Episode",
         "imageUrl": "https://minirogue.github.io/SWCovers/TV/tales_of_the_empire.jpg",
         "releaseDate": "5/4/2024",
-        "timeline": null,
-        "description": null,
+        "timeline": -1.9775,
+        "description": "A family seeks out a wise woman who may know why the Empire has taken an interest in a blood sample from their baby.",
         "series": "Tales of the Empire",
         "number": 6,
         "publisher": "Disney"
