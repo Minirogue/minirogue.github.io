@@ -4,8 +4,8 @@
     "type": "TV Episode",
     "imageUrl": "https://minirogue.github.io/SWCovers/TV/tales_of_the_empire.jpg",
     "releaseDate": "5/4/2024",
-    "timeline": -5.9,
-    "description": "Morgan Elspeth presents a new starfighter design to the empire and is introduced to an admiral who takes an interest in it.",
+    "timeline": null,
+    "description": null,
     "series": "Tales of the Empire",
     "number": 2,
     "publisher": "Disney"
