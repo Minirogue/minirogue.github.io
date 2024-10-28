@@ -1,231 +1,301 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta property="og:title" content="Shawn Witte">
-<meta property="og:description" content="Personal website of Shawn Witte.">
-<meta property="og:image" content="https://minirogue.github.io/shawnwittebanner.jpg">
-<meta property="og:url" content="https://minirogue.github.io/">
-<meta name="twitter:card" content="summary_large_image">
-<title>Shawn Witte</title>
-<link href="defaultstyle.css" rel="stylesheet" media="screen" />
-<link rel="icon" href="witteicon.ico" type="image/x-icon" />
-<script type="text/javaScript" src="curvycorners.js"></script>
-<script type="text/javascript">
-    //<![CDATA[
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta property="og:title" content="Shawn Witte">
+    <meta property="og:description" content="Personal website of Shawn Witte.">
+    <meta property="og:image" content="https://minirogue.github.io/shawnwittebanner.jpg">
+    <meta property="og:url" content="https://minirogue.github.io/">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Shawn Witte</title>
+    <link href="defaultstyle.css" rel="stylesheet" media="screen"/>
+    <link rel="icon" href="witteicon.ico" type="image/x-icon"/>
+    <script type="text/javaScript" src="curvycorners.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
 
-    var tabLinks = new Array();
-    var contentDivs = new Array();
+        var tabLinks = new Array();
+        var contentDivs = new Array();
 
-    function init() {
+        function init() {
 
-      // Grab the tab links and content divs from the page
-      var tabListItems = document.getElementById('tabul').childNodes;
-      for ( var i = 0; i < tabListItems.length; i++ ) {
-        if ( tabListItems[i].nodeName == "LI" ) {
-          var tabLink = getFirstChildWithTagName( tabListItems[i], 'A' );
-          var id = getHash( tabLink.getAttribute('href') );
-          tabLinks[id] = tabLink;
-          contentDivs[id] = document.getElementById( id );
+            // Grab the tab links and content divs from the page
+            var tabListItems = document.getElementById('tabul').childNodes;
+            for (var i = 0; i < tabListItems.length; i++) {
+                if (tabListItems[i].nodeName == "LI") {
+                    var tabLink = getFirstChildWithTagName(tabListItems[i], 'A');
+                    var id = getHash(tabLink.getAttribute('href'));
+                    tabLinks[id] = tabLink;
+                    contentDivs[id] = document.getElementById(id);
+                }
+            }
+
+            // Assign onclick events to the tab links, and
+            // highlight the first tab
+            var i = 0;
+
+            for (var id in tabLinks) {
+                tabLinks[id].onclick = showTab;
+                tabLinks[id].onfocus = function () {
+                    this.blur()
+                };
+                if (i == 0) tabLinks[id].className = 'selected';
+                i++;
+            }
+
+            // Hide all content divs except the first
+            var i = 0;
+
+            for (var id in contentDivs) {
+                if (i != 0) contentDivs[id].className = 'tabContent hidden';
+                i++;
+            }
         }
-      }
 
-      // Assign onclick events to the tab links, and
-      // highlight the first tab
-      var i = 0;
+        function showTab() {
+            var selectedId = getHash(this.getAttribute('href'));
 
-      for ( var id in tabLinks ) {
-        tabLinks[id].onclick = showTab;
-        tabLinks[id].onfocus = function() { this.blur() };
-        if ( i == 0 ) tabLinks[id].className = 'selected';
-        i++;
-      }
+            // Highlight the selected tab, and dim all others.
+            // Also show the selected content div, and hide all others.
+            for (var id in contentDivs) {
+                if (id == selectedId) {
+                    tabLinks[id].className = 'selected';
+                    contentDivs[id].className = 'tabContent';
+                } else {
+                    tabLinks[id].className = '';
+                    contentDivs[id].className = 'tabContent hidden';
+                }
+            }
 
-      // Hide all content divs except the first
-      var i = 0;
-
-      for ( var id in contentDivs ) {
-        if ( i != 0 ) contentDivs[id].className = 'tabContent hidden';
-        i++;
-      }
-    }
-    function showTab() {
-      var selectedId = getHash( this.getAttribute('href') );
-
-      // Highlight the selected tab, and dim all others.
-      // Also show the selected content div, and hide all others.
-      for ( var id in contentDivs ) {
-        if ( id == selectedId ) {
-          tabLinks[id].className = 'selected';
-          contentDivs[id].className = 'tabContent';
-        } else {
-          tabLinks[id].className = '';
-          contentDivs[id].className = 'tabContent hidden';
+            // Stop the browser following the link
+            return false;
         }
-      }
 
-      // Stop the browser following the link
-      return false;
-    }
+        function getFirstChildWithTagName(element, tagName) {
+            for (var i = 0; i < element.childNodes.length; i++) {
+                if (element.childNodes[i].nodeName == tagName) return element.childNodes[i];
+            }
+        }
 
-    function getFirstChildWithTagName( element, tagName ) {
-      for ( var i = 0; i < element.childNodes.length; i++ ) {
-        if ( element.childNodes[i].nodeName == tagName ) return element.childNodes[i];
-      }
-    }
+        function getHash(url) {
+            var hashPos = url.lastIndexOf('#');
+            return url.substring(hashPos + 1);
+        }
 
-    function getHash( url ) {
-      var hashPos = url.lastIndexOf ( '#' );
-      return url.substring( hashPos + 1 );
-    }
-
-    //]]></script>
+        //]]></script>
 </head>
 <body onload="init()">
 <div id="container">
-<div id="wrapper">
-<div id="banner">
-<div id="name">
-<h1>Shawn Witte</h1>
-<h2>Android Developer</h2>
-<h2>Mathematics PhD</h2>
-</div>
-</div>
-<div id="tabs">
-<ul id="tabul"> <li><a href="#about">About Me</a></li>
-<li><a href="#personalprojects">Personal Projects</a></li>
-<li><a href="#research">Academic Research (my former life)</a></li>
-<li><a href="#links">Links</a></li>
-</ul>
-</div>
-<div id="page">
+    <div id="wrapper">
+        <div id="banner">
+            <div id="name">
+                <h1>Shawn Witte</h1>
+                <h2>Android Engineer</h2>
+                <h2>Mathematics PhD</h2>
+                <h2>Open to work</h2>
+            </div>
+        </div>
+        <div id="tabs">
+            <ul id="tabul">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#personalprojects">Personal Projects</a></li>
+                <li><a href="#research">Academic Research (my former life)</a></li>
+                <li><a href="#links">Links</a></li>
+            </ul>
+        </div>
+        <div id="page">
 
-<div id="sidebar">
-<img src="self.jpg" width="300px" title="Me" alt="Me" id="fac_photo" />
-<p><b>E-mail:</b> <a href="mailto:shawn.l.witte@gmail.com">shawn.l.witte@gmail.com</a><br />
-<b>Résumé:</b> <a href="resources/ShawnWitteResume.pdf" target="_blank">pdf</a><br />
-<a href="http://www.linkedin.com/in/shawn-witte" target="_blank"><img src="resources/linkedin_icon.png" alt="LinkedIn" style="height:25px;width:25px" /></a>
-<a href="https://github.com/Minirogue" target="_blank"><img src="resources/github_icon.png" alt="GitHub" style="height:25px;width:25px" /></a>
-<p><small><script type="text/javascript"> 
-months = ['January', 'Febraury', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; 
-var theDate = new Date(document.lastModified); 
-theDate.setTime((theDate.getTime()-(7000*60*60)) ) 
-with (theDate) { 
-document.write("Page last updated "+months[getMonth()]+' '+getDate()+', '+getFullYear()) 
-function n(n){
-    return n > 9 ? "" + n: "0" + n;
-}
-} 
-</script> </small></p>
-</div>
+            <div id="sidebar">
+                <img src="self.jpg" width="300px" title="Me" alt="Me" id="fac_photo"/>
+                <p><b>E-mail:</b> <a href="mailto:shawn.l.witte@gmail.com">shawn.l.witte@gmail.com</a><br/>
+                    <b>Résumé:</b> <a href="resources/ShawnWitteResume.pdf" target="_blank">pdf</a><br/>
+                    <a href="http://www.linkedin.com/in/shawn-witte" target="_blank"><img
+                            src="resources/linkedin_icon.png" alt="LinkedIn" style="height:25px;width:25px"/></a>
+                    <a href="https://github.com/Minirogue" target="_blank"><img src="resources/github_icon.png"
+                                                                                alt="GitHub"
+                                                                                style="height:25px;width:25px"/></a>
+                <p><small>
+                    <script type="text/javascript">
+                        months = ['January', 'Febraury', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+                        var theDate = new Date(document.lastModified);
+                        theDate.setTime((theDate.getTime() - (7000 * 60 * 60)))
+                        with (theDate) {
+                            document.write("Page last updated " + months[getMonth()] + ' ' + getDate() + ', ' + getFullYear())
 
-<div class="tabContent" id="about">
-	<p>	
-		I'm Shawn, but people who can't remember that know me as Rainbow.
-    I am currently an Android developer at Tinder and was previously at Stride Health working on their expense and mileage tracking app.
-    I'm very interested in Kotlin Multiplatform, but haven't found the chance to really dig in yet.
-</p>
-<p>
-    In addition to my professional work, I have an Android app that I created created from scratch and personally maintain called HoloCanon.
-    Holocanon is a simple database/checklist for canonical Star Wars content.
-    It is currently available on the <a href="https://play.google.com/store/apps/details?id=com.minirogue.starwarscanontracker">Google Play store</a>, and the code can be found on <a href="https://github.com/Minirogue/SWMediaTracker">GitHub</a>.
-    You can find information about HoloCanon and my other personal projects under the Personal Projects tab above. <!--TODO: Make Projects here link to the tab, and make sure #about #personalprojects, etc. actually open the correct subpage if linked from elsewhere -->
+                            function n(n) {
+                                return n > 9 ? "" + n : "0" + n;
+                            }
+                        }
+                    </script>
+                </small></p>
+            </div>
 
-  <p>
-		In December 2019, I completed my PhD in mathematics at the University of California, Davis.
-		My work was in the field of DNA topology/computational knot theory under <a href="http://www.math.ucdavis.edu/~mariel/">Mariel Vazquez</a> of the <a href="http://arsuaga-vazquez-lab.faculty.ucdavis.edu/">Arsuaga-Vazquez lab</a>.
-	</p>
-	<p>
-		Also, I used to host a radio show called <a href="http://kdrt.org/musiceclectica" target="_blank">Music Eclectica</a> at the Davis community radio station, 95.7FM KDRT, where I share my varied tastes in music with the world.
-	</p>
-</div>
+            <div class="tabContent" id="about">
+                <p>
+                    I'm Shawn, but people who can't remember that know me as Rainbow.
+                    I am currently open to senior-level Android roles.
+                    I was previously at Tinder working on the identity team and before that I was at Stride Health
+                    working on their expense and mileage tracking app (from top to bottom).
+                    My biggest interests right now are Kotlin Multiplatform, app/build infrastructure, and developer
+                    productivity.
+                </p>
+                <p>
+                    In addition to my professional work, I have an Android app that I created from scratch and
+                    personally maintain called HoloCanon.
+                    Holocanon is a simple database/checklist for canonical Star Wars content.
+                    It is currently available on the <a
+                        href="https://play.google.com/store/apps/details?id=com.minirogue.starwarscanontracker">Google
+                    Play store</a>, and the code can be found on <a href="https://github.com/Minirogue/SWMediaTracker">GitHub</a>.
+                    You can find information about HoloCanon and my other personal projects under the Personal Projects
+                    tab above.
+                    <!--TODO: Make Projects here link to the tab, and make sure #about #personalprojects, etc. actually open the correct subpage if linked from elsewhere -->
 
-<div class="tabContent" id="personalprojects">
-	<p>In addition to my academic and professional work, I have a few personal projects:</p>
-	<h3>HoloCanon (Android App: <a href="https://play.google.com/store/apps/details?id=com.minirogue.starwarscanontracker">Play Store</a>, <a href="https://github.com/Minirogue/SWMediaTracker">GitHub</a>)</h3>
-	<p>
-  		This is an Android app I wrote to help myself keep track of what canonical Star Wars media I have and haven't consumed yet.
-  		I decided to flesh it out and release it for my fellow nerds, and it has been well-received so far.
-  		The core of the app is the listing of a database of canonical Star Wars content (novels, movies, TV shows, comics, etc.) with the ability to filter, sort, and check off items with three different checkboxes corresponding to user-defined parameters.
-  		I personally use two of the checkboxes for "completed" and "wishlist" so I can filter out things I've aleady read or watched, or filter in things that have piqued my interest more than others.
-  	</p>
-    <p>
-      This app was originally written when I was first learning Android development.
-      I periodically work to update it to better practices, but unfortunately it's still not quite up to the quality of my normal day-to-day work.
-    </p>
-  <h3>Untitled Video Game Project (Multiplatform?)</h3>
-  <p>
-    I recently got the urge to try to find a new RPG with a job system in the vein of Final Fantasy V (which is a highly underrated entry in the series as far as I'm concerned).
-    I was surprised and disappointed to discover that there only a small list of games with in-depth job systems.
-    Inspired by the success of indie games such as <a href="https://www.stardewvalley.net/">Stardew Valley</a>, I decided to try my hand at my own interpretation of a job system-based JRPG-style game (with some strategy-game twists, if my current ideas pan out).
-    It is in extremely early stages, but I'm using it as a good excuse to learn Kotlin multiplatform (which admittedly, may be a questionable choice for a video game) and dabble in some pixel art.
-  </p>
-</div>
+                <p>
+                    In December 2019, I completed my PhD in mathematics at the University of California, Davis.
+                    My work was in the field of DNA topology/computational knot theory under <a
+                        href="https://biology.ucdavis.edu/people/mariel-vazquez">Mariel Vazquez</a> of the <a
+                        href="http://arsuaga-vazquez-lab.faculty.ucdavis.edu/">Arsuaga-Vazquez lab</a>.
+                </p>
+            </div>
+
+            <div class="tabContent" id="personalprojects">
+                <p>In addition to my academic and professional work, I have a few personal projects:</p>
+                <h3>HoloCanon (Android App: <a
+                        href="https://play.google.com/store/apps/details?id=com.minirogue.starwarscanontracker">Play
+                    Store</a>, <a href="https://github.com/Minirogue/SWMediaTracker">GitHub</a>)</h3>
+                <p>
+                    This is an Android app I wrote to help myself keep track of what canonical Star Wars media I have
+                    and haven't consumed yet.
+                    I decided to flesh it out and release it for my fellow nerds, and it has been well-received so far.
+                    The core of the app is the listing of a database of canonical Star Wars content (novels, movies, TV
+                    shows, comics, etc.) with the ability to filter, sort, and check off items with three different
+                    checkboxes corresponding to user-defined parameters.
+                    I personally use two of the checkboxes for "completed" and "wishlist" so I can filter out things
+                    I've aleady read or watched, or filter in things that have piqued my interest more than others.
+                </p>
+                <p>
+                    I am currently working on updating this code to meet my standard of work (unit tests, code quality,
+                    modularization/encapsulations, etc.) as well as prepare it for an iOS version using Kotlin
+                    Multiplatform.
+                </p>
+                <!--                <h3>Untitled Video Game Project (Multiplatform?)</h3>-->
+                <!--                <p>-->
+                <!--                    I recently got the urge to try to find a new RPG with a job system in the vein of Final Fantasy V-->
+                <!--                    (which is a highly underrated entry in the series as far as I'm concerned).-->
+                <!--                    I was surprised and disappointed to discover that there only a small list of games with in-depth job-->
+                <!--                    systems.-->
+                <!--                    Inspired by the success of indie games such as <a href="https://www.stardewvalley.net/">Stardew-->
+                <!--                    Valley</a>, I decided to try my hand at my own interpretation of a job system-based JRPG-style game-->
+                <!--                    (with some strategy-game twists, if my current ideas pan out).-->
+                <!--                    It is in extremely early stages, but I'm using it as a good excuse to learn Kotlin multiplatform-->
+                <!--                    (which admittedly, may be a questionable choice for a video game) and dabble in some pixel art.-->
+                <!--                </p>-->
+            </div>
 
 
-<div class="tabContent" id="research">
- 
-  <h3>Knot Theory</h3>
-	<p>
-		My main PhD research was in the field of knot theory.
-		I have explored cubic lattice links, as well as grid diagrams using Markov chains to determine the behavior of expected writhe as these links get larger.
-		Additionally I have proven a version of the Frisch-Wasserman-Delbruck conjecture for grid diagrams (publication pending).
-	</p>
-	<p>
-		Much of my Markov chain work was written in Python, then later converted to Java.
-		I wrote the framework for working with grid diagrams from scratch, but it was influenced by <a href="http://homepages.math.uic.edu/~culler/gridlink/">Gridlink</a> written by Marc Culler.
-		My code for grid diagrams can be found <a href="https://github.com/Minirogue/GridDiagramsJava">on GitHub</a>.
-		I have not yet cleaned up the code for use by others, so feel free to e-mail me if you wish to use it.
-    That way I can modify the command line interface to actual user needs.
-	</p>
-  <h3>Publications</h3>
-  <p>
-  	<a href="https://www.mdpi.com/2073-8994/10/11/604">A Symmetry Motivated Link Table</a> - Using writhe data gathered from Monte Carlo sampling of links in the simple cubic lattice, we presented a way to choose a standard isotopy class for links with minimum crossing number 9 or less. This should aid in the communication of future research where link symmetries may be important.
-  </p>
+            <div class="tabContent" id="research">
 
-  <h3>PhD Dissertation</h3>
-  <p>
-  	<a href="https://www.math.ucdavis.edu/~tdenena/dissertations/201910_Witte_Dissertation.pdf">Link Nomenclature, Random Grid Diagrams, and Markov Chain Methods in Knot Theory</a> - PhD dissertation giving a canonical link nomenclature and exploring some random knotting methods, particularly in the context of grid diagrams and lattice links.
-  </p>
+                <h3>Knot Theory</h3>
+                <p>
+                    My main PhD research was in the field of knot theory.
+                    I have explored cubic lattice links, as well as grid diagrams using Markov chains to determine the
+                    behavior of expected writhe as these links get larger.
+                    Additionally I have proven a version of the Frisch-Wasserman-Delbruck conjecture for grid diagrams
+                    (see dissertation).
+                </p>
+                <p>
+                    Much of my Markov chain work was written in Python, then later converted to Java.
+                    I wrote the framework for working with grid diagrams from scratch, but it was influenced by <a
+                        href="http://homepages.math.uic.edu/~culler/gridlink/">Gridlink</a> written by Marc Culler.
+                    My code for grid diagrams can be found <a href="https://github.com/Minirogue/GridDiagramsJava">on
+                    GitHub</a>.
+                    I have not yet cleaned up the code for use by others, so feel free to e-mail me if you wish to use
+                    it.
+                    That way I can modify the command line interface to actual user needs.
+                </p>
+                <h3>Publications</h3>
+                <p>
+                    <a href="https://www.mdpi.com/2073-8994/10/11/604">A Symmetry Motivated Link Table</a> - Using
+                    writhe data gathered from Monte Carlo sampling of links in the simple cubic lattice, we presented a
+                    way to choose a standard isotopy class for links with minimum crossing number 9 or less. This should
+                    aid in the communication of future research where link symmetries may be important.
+                </p>
 
-  <h3>Master's Thesis</h3>
-  <p>
-    <a href="https://scholarly.cmich.edu/cgi-bin/cmuscholarly?a=d&amp;d=CMUGR2013-89&amp;e=-------en-10--1--txt-txIN%7ctxAUF%7ctxTI--------" target="_blank">Covering Regions with k-Transmitters</a> - Master's thesis exploring the k-transmitter problem, which is an extension of the art gallery problem.
-  </p>
+                <h3>PhD Dissertation</h3>
+                <p>
+                    <a href="https://www.math.ucdavis.edu/~tdenena/dissertations/201910_Witte_Dissertation.pdf">Link
+                        Nomenclature, Random Grid Diagrams, and Markov Chain Methods in Knot Theory</a> - PhD
+                    dissertation giving a canonical link nomenclature and exploring some random knotting methods,
+                    particularly in the context of grid diagrams and lattice links.
+                </p>
 
-  <h3>Posters</h3>
-  <ul>
-  	<li><a href="research/BlackwellTapiaPoster.pdf" target="_blank">2016 Blackwell-Tapia Conference and Award Ceremony</a> - Randomly Sampling Grid Diagrams of Knots</li>
-  	<li><a href="research/goldensectionposter.pdf" target="_blank">Winter 2016 MAA Golden Section Meeting</a> - A Dynamic Monte Carlo Algorithm for Sampling Grid Diagrams of Knots</li>
-    <li><a href="research/shawn_zihao_bamba_2018.pdf" target="_blank">BaMBA 2018</a> - Wang-Landau Improves Mean Writhe Estimates in Grid Diagrams and Z^3 Links</li>
-  </ul>
-  </div>
+                <h3>Master's Thesis</h3>
+                <p>
+                    <a href="https://scholarly.cmich.edu/cgi-bin/cmuscholarly?a=d&amp;d=CMUGR2013-89&amp;e=-------en-10--1--txt-txIN%7ctxAUF%7ctxTI--------"
+                       target="_blank">Covering Regions with k-Transmitters</a> - Master's thesis exploring the
+                    k-transmitter problem, which is an extension of the art gallery problem.
+                </p>
 
-<div class="tabContent" id="links">
-  <h3>My Links</h3>
-<a href="resources/ShawnWitteResume.pdf" target="_blank"><b>Current Résumé</b></a> - Last updated March 2024.<br />
-<a href="http://www.linkedin.com/in/shawn-witte" target="_blank"><b>LinkedIn account</b></a> - Feel free to connect if we know each other.<br />
-<a href="https://github.com/Minirogue" target="_blank"><b>GitHub account</b></a> - Code from projects I've worked on.<br />
-<a href="http://kdrt.org/musiceclectica" target="_blank"><b>Music Eclectica</b></a> - A radio show I used to do on KDRT. <br />
-<a href="http://www.last.fm/user/Minirogue" target="_blank"><b>Last.fm profile</b></a> - A catalogue of my music listening habits since 2007.
+                <h3>Posters</h3>
+                <ul>
+                    <li><a href="research/BlackwellTapiaPoster.pdf" target="_blank">2016 Blackwell-Tapia Conference and
+                        Award Ceremony</a> - Randomly Sampling Grid Diagrams of Knots
+                    </li>
+                    <li><a href="research/goldensectionposter.pdf" target="_blank">Winter 2016 MAA Golden Section
+                        Meeting</a> - A Dynamic Monte Carlo Algorithm for Sampling Grid Diagrams of Knots
+                    </li>
+                    <li><a href="research/shawn_zihao_bamba_2018.pdf" target="_blank">BaMBA 2018</a> - Wang-Landau
+                        Improves Mean Writhe Estimates in Grid Diagrams and Z^3 Links
+                    </li>
+                </ul>
+            </div>
 
-<h3> Useful Android Dev Resources</h3>
-  <p>
-    <a href="https://codinginflow.com/">Coding in Flow</a> is hands down my favorite collection of video tutorials for learning Android concepts. It was absolutely crucial to my early understanding of writing Android code, including architecture.
-  </p>
-  <h3>Useful Math Resources</h3>
-<p>
-	<a href="http://people.math.gatech.edu/~cain/textbooks/onlinebooks.html">This list</a> compiled by George Cain of Georgia Institute of Technology contains links to many legally freely available mathematics textbooks.
-</p>
-<p>
-	<a href="https://open.umn.edu/opentextbooks/">Open Textbook Library</a> is hosted by the University of Minnesota and contains a large number of freely accessible digital textbooks from a wide variety of subjects.
-</p>
-<p>
-	<a href="http://cremeronline.com/LaTeX/minimaltikz.pdf">A Very Minimal Introduction to TikZ</a> is an excellent guide to basic commands for drawing pictures in LaTex by Jaques Cr&eacute;mer. I used it as a regular reference when writing my papers.
-</p>
-</div>
-</div>
-</div>
+            <div class="tabContent" id="links">
+                <h3>My Links</h3>
+                <h4>Professional Links</h4>
+                <a href="resources/ShawnWitteResume.pdf" target="_blank"><b>Current Résumé</b></a> - Last updated
+                October 2024.<br/>
+                <a href="http://www.linkedin.com/in/shawn-witte" target="_blank"><b>LinkedIn account</b></a> - Feel free
+                to connect if we know each other.<br/>
+                <a href="https://github.com/Minirogue" target="_blank"><b>GitHub account</b></a> - Code from projects
+                I've worked on.<br/>
+
+                <h4>Personal Links</h4>
+                <a href="http://www.last.fm/user/Minirogue" target="_blank"><b>Last.fm profile</b></a> - A catalogue of
+                my music listening habits since 2007.
+
+                <h3>External Links</h3>
+                <h4>Software Engineering</h4>
+                <p>
+                    <a href="https://codinginflow.com/">Coding in Flow</a>'s youtube channel is what I first used to
+                    learn some of the basics of Android development.
+                </p>
+                <p>
+                    <a href="https://elizarov.medium.com/kotlin-and-exceptions-8062f589d07">This Medium Article</a> by
+                    Roman Elizarov (former project lead for Kotlin) is a good read for the philosophy of exception
+                    handling in Kotlin.
+                </p>
+
+                <h4>Useful Math Resources</h4>
+                <p>
+                    <a href="http://people.math.gatech.edu/~cain/textbooks/onlinebooks.html">This list</a> compiled by
+                    George Cain of Georgia Institute of Technology contains links to many legally freely available
+                    mathematics textbooks.
+                </p>
+                <p>
+                    <a href="https://open.umn.edu/opentextbooks/">Open Textbook Library</a> is hosted by the University
+                    of Minnesota and contains a large number of freely accessible digital textbooks from a wide variety
+                    of subjects.
+                </p>
+                <p>
+                    <a href="http://cremeronline.com/LaTeX/minimaltikz.pdf">A Very Minimal Introduction to TikZ</a> is
+                    an excellent guide to basic commands for drawing pictures in LaTex by Jaques Cr&eacute;mer. I used
+                    it as a regular reference when writing my papers.
+                </p>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>
